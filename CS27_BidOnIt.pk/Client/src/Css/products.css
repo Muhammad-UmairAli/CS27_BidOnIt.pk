@@ -1,0 +1,102 @@
+.cat-set {
+  width: 220px !important;
+}
+.main_image img{
+  width: 100%;
+  margin-bottom: 15px;
+}
+.thumbnails{
+  margin-bottom: 15px;
+}
+.sellerCard{
+  border: 1px solid grey;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0px 0px 12px 3px #8080805e;
+}
+.rating .dv-star-rating {
+  line-height: 0;
+}
+.mainTimerDiv .timer{
+  position: static;
+    display: inline-block;
+    width: 20%;
+    padding: 0px;
+    margin-right: 10px;
+    line-height: 1.5;
+    height: 31px;
+}
+.card-header{
+  cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+  .cat-set {
+    width: auto !important;
+  }
+}
+@media screen and (max-width:500px){
+  .sellerCard {
+    width: 100%;
+  }
+}
+.img-set {
+  width: 140px !important;
+  height: 112px !important;
+}
+.font-set {
+  font-size: small;
+}
+.responsive-row {
+  width: 100%;
+}
+
+.set {
+  margin-top: -22px;
+}
+.page-link {
+  color: black !important;
+}
+
+.list-group-item.active {
+  background-color: rgb(255, 214, 19) !important;
+  border-color: rgb(255, 214, 19) !important;
+}
+.page-item.active .page-link {
+  background-color: rgb(255, 214, 19) !important;
+  border-color: rgb(255, 214, 19) !important;
+}
+.Auction-title {
+  padding: 0% !important;
+  background: rgb(255, 214, 19);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 214, 19, 0.8883928571428571) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 3px;
+}
+
+@media (min-width: 576px) {
+  .img-set {
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-set {
+    margin-left: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-set {
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-set {
+    margin-left: 55px;
+  }
+}

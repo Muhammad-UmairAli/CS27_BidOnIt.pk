@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.react-datepicker-wrapper{
+  width: 100% !important;
+}
+.dataTable thead tr th.sorting::after, .dataTable thead tr th.sorting_asc::after{
+  display: none !important;
+}
+.bottom .dataTables_paginate .pagination li {
+  margin-right: 10px;
+}
+.bottom .dataTables_paginate .pagination li.active a {
+  font-weight: bold;
+}
+.dataTables_wrapper .top {
+  width: 100%;
+}
+.dataTables_wrapper .top .dataTables_length {
+  float: left;
+}
+.dataTables_wrapper .top .dataTables_filter {
+  float: right;
+}
+div.dataTables_wrapper div.dataTables_length select{
+  margin-right: 5px;
+  margin-left: 5px;
+}

@@ -1,0 +1,8 @@
+.overlay {
+  width: 100%;
+  position: absolute; /*You may also use fixed depending on your needs.*/
+  left: 0;
+  top: 0;
+  z-index: 9;
+  margin-top: 50px;
+}

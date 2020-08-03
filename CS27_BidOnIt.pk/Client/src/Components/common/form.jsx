@@ -1,0 +1,152 @@
+import React, { Component } from 'react';
+import Joi from 'joi-browser';
+import Input from './input';
+import Select from './select';
+import Textarea from './textarea';
+class Form extends Component {
+  state = {
+    data: {},
+    errors: {}
+  };
+
+  validate = () => {
+    const options = { abortEarly: false };
+    const { error } = Joi.validate(this.state.data, this.schema, options);
+    if(this.state.data.imageUrl !== '' && typeof this.state.data.imageUrl == "object"){
+    }
+    if (!error) return null;
+    const errors = {};
+    for (let item of error.details) errors[item.path[0]] = item.message;
+    return errors;
+  };
+
+  validateProperty = ({ name, value }) => {
+    const obj = { [name]: value };
+    const schema = { [name]: this.schema[name] };
+    const { error } = Joi.validate(obj, schema);
+    return error ? error.details[0].message : null;
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+
+    const errors = this.validate();
+    this.setState({ errors: errors || {} });
+    if (errors) return;
+
+    this.doSubmit();
+  };
+
+  handleChange = ({ currentTarget: input }) => {
+    const errors = { ...this.state.errors };
+    let errorMessage = this.validateProperty(input);
+    console.log(errorMessage);
+    if(input.name === 'imageUrl' && typeof input.files === "object"){
+      errorMessage = null;
+    }
+    if (errorMessage) errors[input.name] = errorMessage;
+    else delete errors[input.name];
+
+    const data = { ...this.state.data };
+    if(input.name === 'imageUrl'){
+      let file = input.files;
+    if (file) {
+      data[input.name] = file;
+    }
+    }else{
+      data[input.name] = input.value;
+    }
+    
+
+    this.setState({ data, errors });
+  };
+
+  renderButton(label) {
+    console.log(this.validate());
+    return (
+      <button
+        disabled={this.validate()}
+        className="btn btn-warning btn-lg btn-block "
+      >
+        {label}
+      </button>
+    );
+  }
+  renderInput(name, label, type = 'text') {
+    const { data, errors } = this.state;
+
+    return (
+      <Input
+        type={type}
+        name={name}
+        value={data[name]}
+        label={label}
+        onChange={this.handleChange}
+        error={errors[name]}
+      />
+    );
+  }
+
+  renderInputEmail(name, label, type = 'email') {
+    const { data, errors } = this.state;
+
+    return (
+      <Input
+        type={type}
+        name={name}
+        value={data[name]}
+        label={label}
+        onChange={this.handleChange}
+        error={errors[name]}
+      />
+    );
+  }
+
+  renderTextarea(name, label) {
+    const { data, errors } = this.state;
+
+    return (
+      <Textarea
+        name={name}
+        value={data[name]}
+        label={label}
+        onChange={this.handleChange}
+        error={errors[name]}
+      >
+        </Textarea>
+    );
+  }
+
+  renderFileInput(name, label, type = 'file', accept='') {
+    const { errors } = this.state;
+
+    return (
+      <Input
+        type={type}
+        name={name}
+        label={label}
+        onChange={this.handleChange}
+        accept={accept}
+        error={errors[name]}
+        multiple
+      />
+    );
+  }
+
+  renderSelect(name, label, options) {
+    const { data, errors } = this.state;
+
+    return (
+      <Select
+        name={name}
+        value={data[name]}
+        label={label}
+        options={options}
+        onChange={this.handleChange}
+        error={errors[name]}
+      />
+    );
+  }
+}
+
+export default Form;

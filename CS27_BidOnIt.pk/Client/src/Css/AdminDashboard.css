@@ -1,0 +1,67 @@
+.LiveAuctions{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158);
+    max-width: 300px;
+    margin: auto;
+    max-height: 150px;
+    min-height: 150px;
+    
+}
+.card-text
+{
+    margin-top: 20px;
+}
+.colorcards1{
+    border-left-style: solid;
+    border-left-color: coral;
+}
+.colorcards2{
+    border-left-style: solid;
+    border-left-color: rgb(188, 255, 80);
+}
+.colorcards3{
+    border-left-style: solid;
+    border-left-color: rgb(72, 0, 187);
+}
+.logoutLink, .logoutLink:hover{
+    color: white;
+}
+.MuiToolbar-root {
+    justify-content: space-between;
+}
+.StripeElement {
+    box-sizing: border-box;
+  
+    height: 40px;
+  
+    padding: 10px 12px;
+  
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: white;
+  
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+  }
+  
+  .StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+  }
+  
+  .StripeElement--invalid {
+    border-color: #fa755a;
+  }
+  
+  .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
+
+  .paymetspan{
+      font-size: 20px;
+  }
+  .paymetspan2 {
+      margin-left: 10px;
+  }
+  .card ul li div, .card ul li i{
+      cursor: pointer;
+  }

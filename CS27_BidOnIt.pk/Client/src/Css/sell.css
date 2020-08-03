@@ -1,0 +1,16 @@
+#center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+#slide {
+  background-image: url('/images/background2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.advantage {
+  background-color: #f2f2f2;
+}

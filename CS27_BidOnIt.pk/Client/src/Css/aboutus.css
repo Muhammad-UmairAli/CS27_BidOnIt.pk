@@ -1,0 +1,63 @@
+.style1 {
+  color: black;
+  font-size: 28px;
+  font-family: 'Century Gothic';
+}
+.style2 {
+  color: black;
+  font-family: 'Century Gothic';
+}
+.img1 {
+  height: 240px;
+  width: 352px;
+  alt: 'Who';
+  margin-top: 20px;
+}
+.img2 {
+  height: 120px;
+  width: 150px;
+  alt: 'Who';
+  margin-top: 20px;
+}
+.headings1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.paragraphs1 {
+  font-size: 14px;
+  color: #939393;
+}
+.paragraphs2 {
+  font-size: 14px;
+  color: #939393;
+  margin-top: 35px;
+}
+.heading2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.span1 {
+  color: #ffd613;
+  font-size: 48px;
+}
+.span2 {
+  color: #ffffff;
+  font-size: 24px;
+}
+.margins {
+  margin-top: 10px;
+}
+.stylepara {
+  font-size: 24px;
+  margin-left: 30px;
+}
+.carddesgin {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width:500px){
+  .span2 {
+    font-size: 16px;
+  }
+}

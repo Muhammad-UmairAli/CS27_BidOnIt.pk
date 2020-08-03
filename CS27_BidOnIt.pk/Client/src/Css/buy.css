@@ -1,0 +1,122 @@
+.firstdiv {
+  color: #000000;
+  font-size: 28px;
+  font-family: 'Century Gothic';
+}
+.heading1 {
+  font-weight: bold;
+  color: black;
+  margin-top: 25px;
+}
+.paragraphs1 {
+  font-size: 15px;
+  color: #939393;
+  margin-top: 25px;
+}
+.span1 {
+  font-size: 58px;
+  font-weight: bold;
+  color: #ffd613;
+}
+.span2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: #000000 !important;
+}
+.span3 {
+  font-size: 58px;
+  font-weight: bold;
+  color: #ffd613;
+  margin-top: 10px;
+}
+.span4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 27px;
+  margin-left: 10px;
+  color: #000000 !important;
+}
+.backgroundiv {
+  background-color: rgba(234, 234, 234, 0.3);
+}
+.newpara {
+  font-size: 24px;
+  color: black;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.cardstart {
+  height: 53%;
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+.cardimgs {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+.bodycard {
+  border-radius: 15px;
+  background-color: lawngreen;
+  height: 90%;
+}
+.pricetag {
+  font-size: 16px;
+  color: #939393;
+}
+.marginss {
+  margin-right: 20px;
+  margin-top: 55px;
+}
+.span5 {
+  font-size: 16px;
+}
+.heading2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+.button {
+  top: 50%;
+  right: 70%;
+  padding: 16px;
+  background-color: black;
+  color: #ffffff;
+  font-weight: bold;
+  position: absolute;
+}
+.span6 {
+  top: 30%;
+  right: 10%;
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+}
+.para2 {
+  font-size: 50px;
+  position: absolute;
+}
+.coverimg {
+  width: 100%;
+  position: relative;
+}
+.rowss {
+  padding: 40px;
+  margin-top: 20px;
+}
+.rowstyle2 {
+  margin-top: 60px;
+}
+.buydiscount {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+}
+.carddesgin {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
