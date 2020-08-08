@@ -8,7 +8,8 @@ Express js
 MongoDB
 
 Payment method: Stripe
-Login with Facebook/Gmail
+
+Login Verification:Facebook/Gmail
 
 Procedure to RUN Project
 
